@@ -1,7 +1,4 @@
 import csv
-import os, psutil
-process = psutil.Process(os.getpid())
-
 
 fout2 = open("resources/t8.shakespeare.translated.txt","w")
 dic = {}
@@ -48,5 +45,3 @@ with open('frequency.csv', 'w', encoding='UTF8') as f:
     for word in sorted(freq.keys()):
         data = [word, dic[word], freq[word]]
         writer.writerow(data)
-
-print(process.memory_info().rss) 
