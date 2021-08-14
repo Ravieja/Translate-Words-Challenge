@@ -44,7 +44,7 @@ for line in parafile:                 #code to translate the words and to count 
             temp = ""
     fout2.write(pro_line)
 
-header = ['word', 'french translation', 'count'] # creating header for csv file
+header = ['English Word', 'French Word', 'Frequency'] # creating header for csv file
 with open('frequency.csv', 'w', encoding='UTF8') as f: # creating a scv file for the data
     writer = csv.writer(f)
 
